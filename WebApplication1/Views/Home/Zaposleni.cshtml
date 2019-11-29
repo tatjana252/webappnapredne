@@ -1,0 +1,13 @@
+﻿@model List<DataAccessLayer.Models.Zaposleni>
+@{
+    ViewData["Title"] = "Zaposleni";
+}
+
+<h2>Zaposleni</h2>
+@foreach (var z in Model)
+{
+    <p>@z.Ime</p>
+    <p>@z.Prezime</p>
+    <p>@z.Odeljenje.Naziv</p>
+}
+
